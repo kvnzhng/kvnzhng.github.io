@@ -37,30 +37,33 @@ main {
 }
 
 .pron {
-  margin: 0.75rem 0 0;
+  margin: 0.7rem 0 0;
   color: var(--muted);
-  font-size: 1.05rem;
+  font-size: 1.4rem;
 }
-.pron .dot { color: var(--rule); margin: 0 0.35rem; }
+.pron .dot { color: var(--rule); margin: 0 0.4rem; }
 .pron .respell { font-variant: small-caps; letter-spacing: 0.04em; }
 
 .pos {
-  margin: 1.35rem 0 0;
+  margin: 1.1rem 0 0;
   font-style: italic;
+  font-size: 0.88em;
   color: var(--muted);
 }
 
 .senses {
-  margin: 0.5rem 0 0;
+  margin: 0.3rem 0 0;
   padding: 0;
   list-style: none;
   counter-reset: sense;
+  font-size: 0.86em;
+  line-height: 1.42;
 }
 .senses li {
   counter-increment: sense;
   position: relative;
-  padding-left: 2rem;
-  margin-top: 1rem;
+  padding-left: 1.6rem;
+  margin-top: 0.6rem;
 }
 .senses li::before {
   content: counter(sense) ".";
@@ -72,17 +75,18 @@ main {
 }
 .senses .usage {
   display: block;
-  margin-top: 0.35rem;
+  margin-top: 0.25rem;
   font-style: italic;
   color: var(--muted);
 }
 
 .notes {
-  margin: 1.6rem 0 0;
-  font-size: 0.95rem;
+  margin: 1.1rem 0 0;
+  font-size: 0.78em;
+  line-height: 1.45;
   color: var(--muted);
 }
-.notes div + div { margin-top: 0.4rem; }
+.notes div + div { margin-top: 0.25rem; }
 .notes .lbl {
   font-variant: small-caps;
   letter-spacing: 0.08em;
